@@ -1,0 +1,12 @@
+﻿@model Zapatilla
+
+<h1 style="color:chartreuse">DETALLES</h1>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">@Model.Nombre</h5>
+    <p class="card-text">@Model.Descripcion</p>
+    <h6 class="card-subtitle mb-2 text-muted">@Model.Precio</h6>
+    <a  asp-controller="Zapatillas" asp-action="FotosZapatilla" asp-route-idZapatilla="@Model.IdProducto">Ver fotos: </a>
+  </div>
+</div>

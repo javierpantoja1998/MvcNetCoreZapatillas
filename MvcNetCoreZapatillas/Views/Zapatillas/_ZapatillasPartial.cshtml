@@ -1,0 +1,14 @@
+﻿@model List<Zapatilla>
+
+<h1>DETALLES ZAPATILLAS PARCIAL</h1>
+
+@foreach (Zapatilla zap in Model)
+{
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+            <h5 class="card-title">@Model</h5>
+            <p class="card-text">@Model.Descripcion</p>
+            <h6 class="card-subtitle mb-2 text-muted">@Model.Precio</h6>
+        </div>
+    </div>
+}
